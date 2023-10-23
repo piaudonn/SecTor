@@ -1,5 +1,15 @@
-## SecTor
+## SecTor - Active Directory Tricks and Hidden Features
 
+**Session abstract:**
+Active Directory has a long and eventful history spanning over two decades. Yet, over time, numerous AD and Windows capabilities have faded from memory, leaving both assailants and guardians unaware. Among these functionalities lie tactics that can empower attackers to operate covertly and elude auditing measures. There are also features that, with just a few simple 'clicks' (the fundamental unit of effort in the Windows environment), enable administrators to restrict the systems where accounts can log on.
+
+Of course, there is an array of features that never quite made it to the forefront, often due to their somewhat underwhelming nature. What is more thrilling than uncovering that you can customize the "Access Denied" message received by users trying to access a file share, or that you can ban an IP address from making LDAP calls? But some other behaviors warrant further explanations, such as the questionable accuracy of certain security events, or, for the love of Clippy, why can users still use their previous password after a reset operation!?
+
+If you are new to AD, or if you want to rekindle your love for it, join us and discover those tricks and features that can hurt you or help you secure your environment. From this session, attendees will:
+
+1️⃣ Gain practical knowledge on the features they can use today to secure their environment   
+2️⃣ Identify new points of control for defenders to better detect attacks and protect the directory   
+3️⃣  Identify new ways for attackers to hide or stay persistent
 
 ### Should I rename my buit-in admin account?
 
@@ -116,4 +126,14 @@ PowerShell Gallery | NetCease 1.0.3
 🔗 https://www.powershellgallery.com/packages/NetCease/1.0.3
 
 
+### Topics which did not make it to the list
+
+⌛ **Prevent RDP and WinRM** – Use the Windows firewall to isolate your tier-0   
+⌛ **NTDS Quota** – You have permissions to create an object, you just can't   
+⌛ **DNS default permissions** – It's looser than you think it is      
+⌛ **List object mode** – Everyone can read everything? It doesn't have to be this way   
+⌛ **Last Interactive Logon Timestamp** – A LastLogonTimeStamp that is replicated    
+⌛ **ADSI Schema Cache** – Or how your ADSI applications are DoS your branch offices   
+⌛ **Guest lockout** – The noise that you can avoid instead of ignore    
+⌛ **How admins are cheating with the password policy** – And that's easy to spot   
 
