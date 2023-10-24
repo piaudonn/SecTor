@@ -104,6 +104,9 @@ NTLM Audit - Event ID 8004
 2.2.9 Search Flags  (fNEVERVALUEAUDIT)   
 🔗 https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/7c1cdf82-1ecc-4834-827e-d26ff95fb207
 
+4739(S): Domain Policy was changed    
+🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4739
+
 
 ### defaultSecurityDescriptor
 
