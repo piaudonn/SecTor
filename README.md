@@ -70,9 +70,22 @@ objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=contoso,DC=com
 New setting modifies NTLM network authentication behavior   
 🔗 https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/new-setting-modifies-ntlm-network-authentication
 
-4776(S, F): The computer attempted to validate the credentials for an account   
+### NTLM last dance
+
+4776(S, F): The computer attempted to validate the credentials for an account      
 🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4776
 
+4624(S): An account was successfully logged on   
+🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4624
+
+4625(F): An account failed to log on   
+🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4625
+
+4740(S): A user account was locked out   
+🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4740
+
+NTLM Audit - Event ID 8004   
+🔗 https://learn.microsoft.com/en-us/defender-for-identity/configure-windows-event-collection#event-id-8004
 
 ### Ban networks from making LDAP calls
 
@@ -132,6 +145,7 @@ Get-ADComputer -Identity DC01$ | Set-ADAccountAuthenticationPolicySilo –Authen
 
 Restricted Admin mode for RDP in Windows 8.1 / 2012 R2   
 🔗 https://learn.microsoft.com/en-us/archive/blogs/kfalde/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2
+
 
 ### Do you still have SMB enumeration enabled?
 
