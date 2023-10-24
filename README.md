@@ -105,6 +105,11 @@ NTLM Audit - Event ID 8004
 🔗 https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/7c1cdf82-1ecc-4834-827e-d26ff95fb207
 
 
+### defaultSecurityDescriptor
+
+6.1.3.6 SD Defaulting Rules   
+🔗 https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/5ba06266-a8ef-4d34-9c29-411676249bcd
+
 ### adminSDHolder RTFM
 
 3.1.1.6.1.2 Protected Objects   
