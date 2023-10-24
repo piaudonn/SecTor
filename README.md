@@ -34,6 +34,11 @@ Metadata #0 - Metadata, what is it and why do we care?
 Privileged Access Management for Active Directory Domain Services   
 🔗 https://learn.microsoft.com/en-us/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services
 
+```PowerShell
+Enable-ADOptionalFeature "Privileged Access Management Feature" -Scope ForestOrConfigurationSet  -Target contoso.com
+Add-ADGroupMember -Identity "Event Log Readers" -Members Bob -MemberTimeToLive (New-TimeSpan -Minutes 45) 
+```
+
 Add-ADGroupMember -MemberTimeToLive    
 🔗 https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps#-membertimetolive
 
@@ -60,11 +65,13 @@ userPrincipalName: bob2@contoso.com
 objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=contoso,DC=com
 ```
 
-
 ### Why can I still use my old password?
 
 New setting modifies NTLM network authentication behavior   
 🔗 https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/new-setting-modifies-ntlm-network-authentication
+
+4776(S, F): The computer attempted to validate the credentials for an account   
+🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4776
 
 
 ### Ban networks from making LDAP calls
@@ -74,6 +81,12 @@ New setting modifies NTLM network authentication behavior
 
 
 ### Audit object modifications
+
+4662(S, F): An operation was performed on an object   
+🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4662
+
+5136(S): A directory service object was modified   
+🔗 https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-5136
 
 2.2.9 Search Flags  (fNEVERVALUEAUDIT)   
 🔗 https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/7c1cdf82-1ecc-4834-827e-d26ff95fb207
