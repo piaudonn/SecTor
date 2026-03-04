@@ -1,5 +1,7 @@
 ## SecTor - Active Directory Tricks and Hidden Features
 
+📼 Recording: http://2023.video.sector.ca/video/881912458
+
 **Session abstract:**
 Active Directory has a long and eventful history spanning over two decades. Yet, over time, numerous AD and Windows capabilities have faded from memory, leaving both assailants and guardians unaware. Among these functionalities lie tactics that can empower attackers to operate covertly and elude auditing measures. There are also features that, with just a few simple 'clicks' (the fundamental unit of effort in the Windows environment), enable administrators to restrict the systems where accounts can log on.
 
